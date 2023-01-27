@@ -55,5 +55,12 @@ export const data = {
 }
 
 export const LinePlot = () => {
-  return <Line options={options} data={data} />
+  return (
+    <>
+      <section className="section">
+        <h2>Demo / Line</h2>
+        <Line options={options} data={data} />
+      </section>
+    </>
+  )
 }

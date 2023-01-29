@@ -20,6 +20,9 @@ export const counterSlice = createSlice({
     decrease: (state) => {
       state.count -= 1;
     },
+    reset: (state) => {
+      state.count = 0;
+    },
   },
 });
 
@@ -27,5 +30,5 @@ export const counterSlice = createSlice({
   * redux Toolkitでは自動で同名のAction creatorsを作成
   * Action creatorsをdispatchで指定する
  */
-export const { increase, decrease } = counterSlice.actions;
+export const { increase, decrease, reset } = counterSlice.actions;
 export default counterSlice.reducer;
